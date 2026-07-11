@@ -1,0 +1,158 @@
+:root {
+  --color-bg: #f5f5f3;
+  --color-primary: #e04f11;
+  --color-primary-hover: #d99764;
+  --color-text: #0b0909;
+  --color-text-light: #63615f;
+  --color-accent: #a05529;
+  --color-beige: #e7cdb2;
+  --color-border: #a4a9aa;
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-bg);
+  overflow: hidden;
+  font-family: var(--font-body);
+  position: relative;
+}
+
+.hero-btn {
+  padding: 1.7rem 2.5rem;
+  border-radius: 4rem;
+  border: none;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.hero-btn--main {
+  color: #fff;
+  background-color: var(--color-primary);
+}
+.hero-btn--main:hover {
+  background-color: var(--color-primary-hover);
+  color: var(--color-text);
+}
+.hero-btn--sub {
+  color: var(--color-text);
+  background-color: var(--color-primary-hover);
+}
+.hero-btn--sub:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.hero-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 1rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(360deg, var(--color-primary), #eee);
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: 550;
+  box-shadow: 0 1px 2rem var(--color-text-light);
+  font-family: var(--font-heading);
+}
+.hero-badge--svg {
+  fill: #000;
+  height: 2rem;
+  width: 2rem;
+}
+.hero-img--float {
+  height: 25rem;
+  width: 25rem;
+  position: absolute;
+  animation: rotation 6s linear infinite;
+}
+.hero-img--float--left {
+  top: 10%;
+  left: 8%;
+}
+.hero-img--float--right {
+  left: 82%;
+  top: 17%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hero {
+  font-family: var(--font-heading);
+  text-align: center;
+}
+.hero-header {
+  font-size: 8rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #b4b4b4;
+}
+.hero-header--main {
+  display: block;
+}
+.hero-header--sub {
+  display: block;
+  background: linear-gradient(180deg, var(--color-primary), #c47b44);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.hero-moto {
+  color: var(--color-text-light);
+  font-size: 2rem;
+  letter-spacing: 0.7px;
+  margin-bottom: 10rem;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://d32nt98g3gjlwu.cloudfront.net/e36c5808-0a58-46ee-9b4c-cf678ab8480a/9WrxmGCivn/Feast_It_bhageecha-catering-and-events-SB8ZnGEJlc.jpg?format=webp&fit=max&w=1200&q=50");
+  background-color: rgba(0, 0, 0, 0.6156862745);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-controls {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

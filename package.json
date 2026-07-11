@@ -1,0 +1,22 @@
+{
+  "name": "too-blessed",
+  "version": "1.0.0",
+  "description": "A landing page for Too Blessed catering company",
+  "license": "ISC",
+  "author": "Ekanem Daniel",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "compiled:scss": "sass scss/main.scss css/style.css -w",
+    "deobserver": "live-server",
+    "dev": "npm-run-all -p deobserver compiled:scss"
+  },
+  "dependencies": {
+    "env": "^0.0.2",
+    "gsap": "^3.15.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "sass": "^1.101.0"
+  }
+}

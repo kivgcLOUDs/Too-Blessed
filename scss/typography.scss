@@ -1,0 +1,37 @@
+.hero {
+  font-family: var(--font-heading);
+  text-align: center;
+
+  // HEADER TEXT
+  &-header {
+    font-size: 8rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #b4b4b4;
+
+    &--main {
+      display: block;
+    }
+
+    &--sub {
+      display: block;
+
+      background: linear-gradient(180deg, var(--color-primary), #c47b44);
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  // MOTO TEXT
+  &-moto {
+    color: var(--color-text-light);
+    font-size: 2rem;
+    letter-spacing: 0.7px;
+    margin-bottom: 10rem;
+  }
+}
