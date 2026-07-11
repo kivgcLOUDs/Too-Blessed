@@ -1,25 +1,40 @@
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url("https://d32nt98g3gjlwu.cloudfront.net/e36c5808-0a58-46ee-9b4c-cf678ab8480a/9WrxmGCivn/Feast_It_bhageecha-catering-and-events-SB8ZnGEJlc.jpg?format=webp&fit=max&w=1200&q=50");
-  background-color: #0000009d;
-  background-blend-mode: darken;
-  // background-image: url("../img/hero-background-image.png");
-  // background-image: linear-gradient(to right, #e04f11, #ff930f);
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(125deg, #374631 100%, #0f1f05c9);
   position: relative;
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+}
 
-  &-content {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.main {
+  display: flex;
+  width: 100%;
+  // justify-content: space-between;
+
+  position: absolute;
+  top: 30%;
+  padding: 0 8rem;
+
+  &-left {
+    flex: 40%;
   }
 
-  &-controls {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
+  &-right {
+    position: relative;
+    width: 80%;
+
+    // flex: 0 0 1;
+    &-img {
+      height: 50rem;
+      width: 50rem;
+      position: absolute;
+      right: 3%;
+      // top: 60%;
+    }
   }
 }

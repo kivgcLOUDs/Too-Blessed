@@ -1,37 +1,36 @@
 .hero {
-  font-family: var(--font-heading);
-  text-align: center;
-
-  // HEADER TEXT
-  &-header {
-    font-size: 8rem;
-    text-transform: capitalize;
-    font-weight: 800;
-    margin-bottom: 2rem;
-    color: #b4b4b4;
-
-    &--main {
-      display: block;
-    }
-
-    &--sub {
-      display: block;
-
-      background: linear-gradient(180deg, var(--color-primary), #c47b44);
-
-      -webkit-background-clip: text;
-      background-clip: text;
-
-      color: transparent;
-      -webkit-text-fill-color: transparent;
+  &-nav {
+    &-text {
+      font-family: var(--font-heading);
+      color: var(--color-primary);
     }
   }
+}
 
-  // MOTO TEXT
-  &-moto {
-    color: var(--color-text-light);
-    font-size: 2rem;
-    letter-spacing: 0.7px;
-    margin-bottom: 10rem;
+.main-left {
+  color: var(--color-bg);
+
+  &-heading {
+    &--secondary {
+      font-family: var(--font-heading);
+      font-size: 8rem;
+      font-weight: 400;
+      margin-bottom: 4rem;
+
+      & span {
+        color: var(--color-primary);
+      }
+    }
+
+    &--tertiary {
+      color: var(--color-bg);
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      letter-spacing: 2.5px;
+      line-height: 3rem;
+      font-weight: 300;
+
+      margin-bottom: 2rem;
+    }
   }
 }

@@ -28,131 +28,110 @@ html {
 }
 
 body {
-  background-color: var(--color-bg);
-  overflow: hidden;
   font-family: var(--font-body);
-  position: relative;
+  font-size: 1.6rem;
 }
 
-.hero-btn {
-  padding: 1.7rem 2.5rem;
-  border-radius: 4rem;
+.hero-nav-links {
+  display: flex;
+  gap: 1.8rem;
+  text-transform: uppercase;
+}
+.hero-nav-link {
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-beige);
+}
+.hero-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.hero-nav-svg {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--color-primary);
+}
+.hero-nav-btn {
+  padding: 1.5rem 2.5rem;
   border: none;
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: all 0.2s;
+  border-radius: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-beige);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   cursor: pointer;
 }
-.hero-btn--main {
-  color: #fff;
-  background-color: var(--color-primary);
-}
-.hero-btn--main:hover {
-  background-color: var(--color-primary-hover);
-  color: var(--color-text);
-}
-.hero-btn--sub {
-  color: var(--color-text);
-  background-color: var(--color-primary-hover);
-}
-.hero-btn--sub:hover {
-  background-color: var(--color-primary);
-  color: #fff;
-}
-.hero-badge {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8rem;
-  gap: 1rem;
-  text-transform: uppercase;
-  background-image: linear-gradient(360deg, var(--color-primary), #eee);
-  display: inline-block;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  font-weight: 550;
-  box-shadow: 0 1px 2rem var(--color-text-light);
+
+.main-left-btn {
+  padding: 1rem 2rem;
+  border: none;
   font-family: var(--font-heading);
-}
-.hero-badge--svg {
-  fill: #000;
-  height: 2rem;
-  width: 2rem;
-}
-.hero-img--float {
-  height: 25rem;
-  width: 25rem;
-  position: absolute;
-  animation: rotation 6s linear infinite;
-}
-.hero-img--float--left {
-  top: 10%;
-  left: 8%;
-}
-.hero-img--float--right {
-  left: 82%;
-  top: 17%;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.hero {
+.hero-nav-text {
   font-family: var(--font-heading);
-  text-align: center;
+  color: var(--color-primary);
 }
-.hero-header {
+
+.main-left {
+  color: var(--color-bg);
+}
+.main-left-heading--secondary {
+  font-family: var(--font-heading);
   font-size: 8rem;
-  text-transform: capitalize;
-  font-weight: 800;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.main-left-heading--secondary span {
+  color: var(--color-primary);
+}
+.main-left-heading--tertiary {
+  color: var(--color-bg);
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  letter-spacing: 2.5px;
+  line-height: 3rem;
+  font-weight: 300;
   margin-bottom: 2rem;
-  color: #b4b4b4;
-}
-.hero-header--main {
-  display: block;
-}
-.hero-header--sub {
-  display: block;
-  background: linear-gradient(180deg, var(--color-primary), #c47b44);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-.hero-moto {
-  color: var(--color-text-light);
-  font-size: 2rem;
-  letter-spacing: 0.7px;
-  margin-bottom: 10rem;
 }
 
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url("https://d32nt98g3gjlwu.cloudfront.net/e36c5808-0a58-46ee-9b4c-cf678ab8480a/9WrxmGCivn/Feast_It_bhageecha-catering-and-events-SB8ZnGEJlc.jpg?format=webp&fit=max&w=1200&q=50");
-  background-color: rgba(0, 0, 0, 0.6156862745);
-  background-blend-mode: darken;
-  background-size: cover;
-  background-position: center;
+  background-image: linear-gradient(125deg, #374631 100%, rgba(15, 31, 5, 0.7882352941));
   position: relative;
 }
-.hero-content {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.hero-controls {
+.hero-nav {
   display: flex;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  padding: 0 8rem;
+}
+.main-left {
+  flex: 40%;
+}
+.main-right {
+  position: relative;
+  width: 80%;
+}
+.main-right-img {
+  height: 50rem;
+  width: 50rem;
+  position: absolute;
+  right: 3%;
 }
 
 /*# sourceMappingURL=style.css.map */
