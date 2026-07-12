@@ -9,6 +9,19 @@
       list-style: none;
       text-decoration: none;
       color: var(--color-beige);
+      transition: all 0.4s;
+
+      &:hover {
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid var(--color-beige);
+      }
+
+      &::after {
+        content: "";
+        height: 100%;
+        width: 3px;
+        background-color: var(--color-beige);
+      }
     }
 
     &-logo {
