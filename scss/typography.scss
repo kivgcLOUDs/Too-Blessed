@@ -1,5 +1,3 @@
-@import url("https://font.googleapis.com/css2?family=Cedarville+Cursive&family=Mono+Signature&display=swap");
-
 .hero {
   &-nav {
     &-text {
@@ -42,8 +40,51 @@
 .about-left-header {
   &--main {
     text-transform: uppercase;
-    color: var(--color-primary);
     font-size: 2rem;
-    font-family: "Mono Signature", cursive;
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+  }
+
+  &--sub {
+    font-family: "Dancing Script";
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+
+  &--primary {
+    text-transform: capitalize;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    color: rgb(243, 229, 33);
+    font-size: 2.8rem;
+  }
+
+  &--secondary {
+    text-transform: capitalize;
+    font-family: var(--font-heading);
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 5rem;
+  }
+}
+
+.about-right {
+  &-heading {
+    text-transform: capitalize;
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    & span {
+      color: var(--color-primary);
+    }
+  }
+
+  &-text {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: #252424;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
   }
 }
