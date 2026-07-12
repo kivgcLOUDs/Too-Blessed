@@ -1,3 +1,4 @@
+@import url("https://font.googleapis.com/css2?family=Cedarville+Cursive&family=Mono+Signature&display=swap");
 :root {
   --color-bg: #f5f5f3;
   --color-primary: #ff6b35;
@@ -84,6 +85,12 @@ body {
   cursor: pointer;
 }
 
+.about-right-book {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
 .hero-nav-text {
   font-family: var(--font-heading);
   color: var(--color-primary);
@@ -111,6 +118,13 @@ body {
   line-height: 3rem;
   font-weight: 300;
   margin-bottom: 2rem;
+}
+
+.about-left-header--main {
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-family: "Mono Signature", cursive;
 }
 
 .hero {
@@ -160,8 +174,31 @@ body {
 
 .about {
   background-color: var(--color-beige);
-  height: 100vh;
+  height: 50vh;
   width: 100%;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.about-right {
+  flex: 1 0 30%;
+  border: 1px solid #000;
+}
+.about-left {
+  flex: 1 0 30%;
+  border: 1px solid #000;
+  position: relative;
+  padding: 2rem;
+  display: flex;
+}
+.about-left-chef {
+  display: inline-block;
+  background-color: #eee;
+}
+.about-left-content {
+  position: absolute;
+  bottom: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */

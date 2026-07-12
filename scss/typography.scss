@@ -1,3 +1,5 @@
+@import url("https://font.googleapis.com/css2?family=Cedarville+Cursive&family=Mono+Signature&display=swap");
+
 .hero {
   &-nav {
     &-text {
@@ -34,5 +36,14 @@
 
       margin-bottom: 2rem;
     }
+  }
+}
+
+.about-left-header {
+  &--main {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-family: "Mono Signature", cursive;
   }
 }
