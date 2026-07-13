@@ -85,12 +85,19 @@ body {
   cursor: pointer;
 }
 
-.about-right-book {
+.about-left-book {
   position: absolute;
   bottom: 10%;
   right: 5%;
 }
-.about-right-book-btn {
+@media (max-width: 1450px) {
+  .about-left-book {
+    right: 0;
+    left: 5%;
+    bottom: 3%;
+  }
+}
+.about-left-book-btn {
   padding: 1.4rem 2rem;
   border: none;
   border-radius: 2.5rem;
@@ -100,6 +107,45 @@ body {
   color: var(--color-bg);
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.about-right-down-content-icon {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  align-self: center;
+  cursor: pointer;
+}
+
+.special-menu {
+  min-height: 50vh;
+  width: 100%;
+  background-color: #eee;
+  padding: 3rem 10rem 10rem 3rem;
+  position: relative;
+}
+.special-menu-items {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.special-menu-btn {
+  transform: translateY(50%);
+  margin-top: 1rem;
+  background-color: var(--color-primary);
+  color: #f5f5f3;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-radius: 0;
+  padding: 1.3rem 2rem;
+}
+
+.event {
+  height: 100vh;
+  width: 100%;
+  background-color: #867a7a;
 }
 
 .hero-nav-text {
@@ -139,9 +185,9 @@ body {
 }
 .about-left-header--sub {
   font-family: "Dancing Script";
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .about-left-header--primary {
   text-transform: capitalize;
@@ -175,8 +221,26 @@ body {
   font-size: 2.2rem;
 }
 
+.special-menu-heading {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: 5rem;
+  padding-bottom: 1rem;
+}
+.special-menu-primary {
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+}
+.special-menu-text {
+  color: var(--color-text-light);
+  font-size: 2rem;
+}
+
 .hero {
-  height: 95vh;
+  min-height: 95vh;
   width: 100%;
   background-image: linear-gradient(125deg, #374631 100%, rgba(15, 31, 5, 0.7882352941));
   position: relative;
@@ -222,7 +286,7 @@ body {
 
 .about {
   background-color: var(--color-beige);
-  height: 80vh;
+  min-height: 100vh;
   width: 100%;
   padding: 4rem;
   display: flex;
@@ -230,35 +294,111 @@ body {
   gap: 3rem;
 }
 .about-right {
-  flex: 0 1 30%;
+  flex: 1 1 30%;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1700px) {
+  .about-right {
+    flex: 0 1 40%;
+  }
 }
 .about-right-down {
   background-color: #7a7979;
   height: 100%;
   width: 100%;
   border-radius: 1.4rem;
+  padding: 2rem;
+  background-image: url("../img/too-Blessed-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-right-down-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: #181818;
+  padding-bottom: 2rem;
 }
 .about-left {
   flex: 0 1 43%;
   position: relative;
   padding: 2rem;
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.664)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJZyAhKWYCk5vFu8jjq7eGr5sxbfIurB16pMZy39xgNw&s=10");
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.753)), url("../img/too-Blessed-meal-1.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 1.4rem;
-  display: flex;
 }
 .about-left-chef {
   display: inline-block;
   background-color: #eee;
-  padding: 1.3rem 2rem;
+  padding: 1.3rem 1.7rem;
   border-radius: 1rem;
 }
 .about-left-content {
   position: absolute;
   bottom: 5%;
+}
+@media (max-width: 1450px) {
+  .about-left-content {
+    bottom: 15%;
+  }
+}
+
+.special-menu-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.special-menu-item {
+  border-radius: 0.7rem;
+  position: relative;
+  padding: 1rem;
+  background-color: #e2dbd4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 40rem;
+  padding-bottom: 4rem;
+}
+.special-menu-item-img {
+  width: 200px;
+  height: 200px;
+}
+
+.ex-size {
+  height: 2rem;
+  width: 2rem;
+}
+
+.flex-col-sp-btw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(46, 46, 46, 0.3137254902);
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.col-sec {
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.col-pri {
+  color: #bb3800;
+  cursor: pointer;
+}
+
+.col-stat {
+  color: #0c5218;
 }
 
 /*# sourceMappingURL=style.css.map */
