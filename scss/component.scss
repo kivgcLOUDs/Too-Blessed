@@ -60,10 +60,16 @@
   }
 }
 
-.about-right-book {
+.about-left-book {
   position: absolute;
   bottom: 10%;
   right: 5%;
+
+  @media (max-width: 1450px) {
+    right: 0;
+    left: 5%;
+    bottom: 3%;
+  }
   &-btn {
     padding: 1.4rem 2rem;
     border: none;
@@ -76,4 +82,47 @@
     letter-spacing: 1px;
     cursor: pointer;
   }
+}
+
+.about-right-down-content-icon {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  align-self: center;
+  cursor: pointer;
+}
+
+.special-menu {
+  min-height: 50vh;
+  width: 100%;
+  // background-color: var(--color-bg);
+  background-color: #eee;
+  padding: 3rem 10rem 10rem 3rem;
+  position: relative;
+
+  &-items {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    // transform: translateY(20%);
+  }
+
+  &-btn {
+    transform: translateY(50%);
+    margin-top: 1rem;
+    background-color: var(--color-primary);
+    color: #f5f5f3;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-radius: 0;
+    padding: 1.3rem 2rem;
+  }
+}
+
+.event {
+  height: 100vh;
+  width: 100%;
+  background-color: #867a7a;
 }

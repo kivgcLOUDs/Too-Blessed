@@ -1,0 +1,27 @@
+.ex-size {
+  height: 2rem;
+  width: 2rem;
+}
+
+.flex-col-sp-btw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2e2e2e50;
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.col-sec {
+  color: #1a1a1a;
+  cursor: pointer;
+}
+.col-pri {
+  color: #bb3800;
+  cursor: pointer;
+}
+.col-stat {
+  color: #0c5218;
+}
