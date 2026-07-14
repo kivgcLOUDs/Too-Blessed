@@ -56,7 +56,7 @@
     text-transform: capitalize;
     font-family: var(--font-heading);
     font-weight: 400;
-    color: rgb(243, 229, 33);
+    color: #f3e521;
     font-size: 2.8rem;
   }
 
@@ -110,5 +110,19 @@
     font-size: 2rem;
     // font-family: var(--font-heading);
     // color: var(--color-border);
+  }
+}
+
+.event {
+  &-heading {
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--color-primary);
+    font-family: "Dancing Script";
+    color: var(--color-primary);
+    font-size: 5rem;
+    letter-spacing: 2px;
+    // text-decoration: underline;
+    padding: 2rem;
   }
 }

@@ -144,9 +144,13 @@ body {
 }
 
 .event {
+  padding: 2rem;
   height: 100vh;
   width: 100%;
-  background-color: #867a7a;
+  background-image: linear-gradient(125deg, #374631 100%, rgba(15, 31, 5, 0.7882352941));
+  position: relative;
+  z-index: 2;
+  margin-top: -50vh;
 }
 
 .hero-nav-text {
@@ -194,7 +198,7 @@ body {
   text-transform: capitalize;
   font-family: var(--font-heading);
   font-weight: 400;
-  color: rgb(243, 229, 33);
+  color: #f3e521;
   font-size: 2.8rem;
 }
 .about-left-header--secondary {
@@ -238,6 +242,17 @@ body {
 .special-menu-text {
   color: var(--color-text-light);
   font-size: 2rem;
+}
+
+.event-heading {
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--color-primary);
+  font-family: "Dancing Script";
+  color: var(--color-primary);
+  font-size: 5rem;
+  letter-spacing: 2px;
+  padding: 2rem;
 }
 
 .hero {
@@ -400,6 +415,12 @@ body {
 
 .col-stat {
   color: #0c5218;
+}
+
+.gallery {
+  height: 100vh;
+  width: 100%;
+  color: aquamarine;
 }
 
 /*# sourceMappingURL=style.css.map */

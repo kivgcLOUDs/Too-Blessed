@@ -123,7 +123,13 @@
 }
 
 .event {
+  padding: 2rem;
   height: 100vh;
   width: 100%;
-  background-color: #867a7a;
+  // background-color: #867a7a;
+  background-image: linear-gradient(125deg, #374631 100%, #0f1f05c9);
+  // background-color: #e2dbd4;
+  position: relative;
+  z-index: 2;
+  margin-top: -50vh;
 }
