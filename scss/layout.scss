@@ -70,6 +70,10 @@
   justify-content: center;
   gap: 3rem;
 
+  &-container {
+    background-color: var(--color-beige);
+  }
+
   &-right {
     flex: 1 1 30%;
     display: flex;
@@ -160,5 +164,15 @@
       width: 200px;
       height: 200px;
     }
+  }
+}
+
+.event {
+  &-container {
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    gap: 2rem;
+    // overflow: hidden;
   }
 }

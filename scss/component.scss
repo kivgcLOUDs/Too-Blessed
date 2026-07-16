@@ -93,7 +93,7 @@
 }
 
 .special-menu {
-  min-height: 50vh;
+  min-height: 70vh;
   width: 100%;
   // background-color: var(--color-bg);
   background-color: #eee;
@@ -131,5 +131,25 @@
   // background-color: #e2dbd4;
   position: relative;
   z-index: 2;
-  margin-top: -50vh;
+  margin-top: -60vh;
+  overflow: hidden;
+  &-img {
+    width: 50rem;
+    height: 50rem;
+    object-fit: cover;
+    flex-shrink: 0;
+    transition: all 0.2s;
+    border-radius: 0.5rem;
+
+    &:hover {
+      transform: scale(1.05);
+      height: 60rem;
+    }
+  }
+}
+
+.menu {
+  height: 100vh;
+  width: 100%;
+  background-color: #eee;
 }
