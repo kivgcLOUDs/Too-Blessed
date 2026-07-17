@@ -225,6 +225,33 @@ body {
   background-color: #fff0de;
 }
 
+.contact {
+  min-height: 40vh;
+  width: 100%;
+  background-color: var(--color-text);
+  color: #fff;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.dish-left {
+  background-color: #fff;
+  margin-top: 4rem;
+  margin-left: 3rem;
+  padding: 3rem;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+.dish-right {
+  background-color: var(--color-primary);
+  padding: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
 .hero-nav-text {
   font-family: var(--font-heading);
   color: var(--color-primary);
@@ -379,6 +406,15 @@ body {
   font-size: 2.5rem;
   letter-spacing: 1px;
   font-family: var(--font-heading);
+}
+
+.contact-text-primary {
+  font-family: var(--font-heading);
+  font-size: 3.7rem;
+  font-weight: 300;
+}
+.contact-text-primary span {
+  color: var(--color-primary);
 }
 
 .hero {
@@ -586,6 +622,12 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+.contact-text {
+  text-align: center;
+  align-self: center;
+  flex: 0 0 30%;
 }
 
 .ex-size {

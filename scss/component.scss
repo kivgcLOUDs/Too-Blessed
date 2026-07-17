@@ -165,7 +165,9 @@
   background-color: var(--color-beige);
 
   display: flex;
+  // flex-direction: column;
   // justify-content: center;
+  // align-items: center;
   gap: 2rem;
   padding: 10rem 5rem;
 
@@ -212,4 +214,39 @@
 .testimonial {
   padding: 10rem 5rem;
   background-color: #fff0de;
+}
+
+.contact {
+  min-height: 40vh;
+  width: 100%;
+  background-color: var(--color-text);
+  color: #fff;
+
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.dish {
+  &-img {
+    // position: absolute;
+  }
+  &-left {
+    background-color: #fff;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    padding: 3rem;
+
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+  }
+
+  &-right {
+    background-color: var(--color-primary);
+    padding: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 4rem;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
 }

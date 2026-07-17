@@ -262,3 +262,11 @@
     }
   }
 }
+
+.contact {
+  &-text {
+    text-align: center;
+    align-self: center;
+    flex: 0 0 30%;
+  }
+}

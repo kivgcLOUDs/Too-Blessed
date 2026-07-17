@@ -188,3 +188,15 @@
     font-family: var(--font-heading);
   }
 }
+
+.contact-text {
+  &-primary {
+    font-family: var(--font-heading);
+    // text-transform: capitalize;
+    font-size: 3.7rem;
+    font-weight: 300;
+    & span {
+      color: var(--color-primary);
+    }
+  }
+}
