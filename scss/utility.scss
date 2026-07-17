@@ -31,3 +31,31 @@
   width: 100%;
   color: aquamarine;
 }
+
+.quote {
+  font-size: 20rem;
+  font-family: "Yuyu Short", sans-serif;
+  color: var(--color-primary);
+  display: inline-block;
+  position: absolute;
+  left: 100%;
+  top: -50%;
+  transform: translateX(-100%);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #1a1a1ad3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot--active {
+  background-color: var(--color-primary-dark);
+}

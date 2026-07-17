@@ -168,15 +168,48 @@
   // justify-content: center;
   gap: 2rem;
   padding: 10rem 5rem;
+
+  &-control {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.3rem;
+
+    &-btn {
+      padding: 0.5rem 1rem;
+      background-color: var(--color-primary);
+      color: #fff;
+      border: none;
+      font-size: 3rem;
+      font-weight: 400;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
+////////////////////////////////////
+/// FOR TESTING PURPOSES ONLY
 .why-card-img {
-  background-color: orangered;
+  background-color: var(--color-primary);
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
 }
 
+.img {
+  background-color: var(--color-primary);
+  height: 7rem;
+  width: 7rem;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/////////////////
+/////////////////
 .testimonial {
   padding: 10rem 5rem;
+  background-color: #fff0de;
 }
