@@ -85,6 +85,16 @@ body {
   cursor: pointer;
 }
 
+.about {
+  background-color: var(--color-beige);
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
 .about-left-book {
   position: absolute;
   bottom: 10%;
@@ -166,10 +176,24 @@ body {
   height: 60rem;
 }
 
-.menu {
-  height: 100vh;
+.why {
+  height: 90vh;
   width: 100%;
-  background-color: #eee;
+  background-color: var(--color-beige);
+  display: flex;
+  gap: 2rem;
+  padding: 10rem 5rem;
+}
+
+.why-card-img {
+  background-color: orangered;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.testimonial {
+  padding: 10rem 5rem;
 }
 
 .hero-nav-text {
@@ -275,6 +299,50 @@ body {
   padding: 2rem;
 }
 
+.why-typo {
+  flex-direction: column;
+  display: flex;
+}
+.why {
+  font-family: var(--font-heading);
+  text-transform: capitalize;
+}
+.why-text {
+  color: var(--color-primary);
+  font-size: 2rem;
+  display: inline-block;
+  flex: 0 0 80%;
+}
+.why-text::after {
+  content: "?";
+}
+.why-heading {
+  color: #000;
+  font-size: 6rem;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.why-card-info {
+  font-size: 3rem;
+  color: rgba(48, 47, 47, 0.8784313725);
+}
+.why-right-established-text {
+  color: rgba(48, 47, 47, 0.9803921569);
+  font-family: "Dancing Script";
+  font-size: 3rem;
+}
+.why-right-established-year {
+  color: var(--color-primary);
+  font-weight: 300;
+  font-size: 3.5rem;
+}
+
+.testimonial-text-content-text {
+  display: block;
+  margin-bottom: 2rem;
+}
+
 .hero {
   min-height: 95vh;
   width: 100%;
@@ -320,15 +388,6 @@ body {
   border-radius: 50%;
 }
 
-.about {
-  background-color: var(--color-beige);
-  min-height: 100vh;
-  width: 100%;
-  padding: 4rem;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-}
 .about-container {
   background-color: var(--color-beige);
 }
@@ -415,6 +474,44 @@ body {
   align-items: center;
   height: 85vh;
   gap: 2rem;
+}
+
+.why-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  background-color: #e2dbd4;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.why-card:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.why-left {
+  padding-left: 10%;
+  flex: 1;
+}
+.why-right {
+  min-width: 40%;
+  background-image: linear-gradient(135deg, rgba(253, 169, 120, 0.116)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjdL5s_f2maefB7N7mkoe7C13Ta7sidBGzhB5_Uo8XsKSO_oCCs1sne5ty&s=10");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.why-right-established {
+  display: inline-block;
+  padding: 2rem;
+  transform: translateY(-50%);
+  border: 1px solid var(--color-primary);
+  background-color: #fff;
+}
+
+.testimonial-text-content {
+  text-align: center;
+}
+.testimonial-text-content-text {
+  display: block;
 }
 
 .ex-size {

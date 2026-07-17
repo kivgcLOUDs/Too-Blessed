@@ -60,6 +60,17 @@
   }
 }
 
+.about {
+  background-color: var(--color-beige);
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
 .about-left-book {
   position: absolute;
   bottom: 10%;
@@ -148,8 +159,24 @@
   }
 }
 
-.menu {
-  height: 100vh;
+.why {
+  height: 90vh;
   width: 100%;
-  background-color: #eee;
+  background-color: var(--color-beige);
+
+  display: flex;
+  // justify-content: center;
+  gap: 2rem;
+  padding: 10rem 5rem;
+}
+
+.why-card-img {
+  background-color: orangered;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.testimonial {
+  padding: 10rem 5rem;
 }

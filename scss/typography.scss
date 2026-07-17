@@ -126,3 +126,57 @@
     padding: 2rem;
   }
 }
+
+.why {
+  &-typo {
+    flex-direction: column;
+    display: flex;
+  }
+
+  font-family: var(--font-heading);
+  text-transform: capitalize;
+  &-text {
+    color: var(--color-primary);
+    font-size: 2rem;
+    display: inline-block;
+    flex: 0 0 80%;
+
+    &::after {
+      content: "?";
+    }
+  }
+
+  &-heading {
+    color: #000;
+    font-size: 6rem;
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+
+  &-card-info {
+    font-size: 3rem;
+    color: #302f2fe0;
+  }
+
+  &-right-established-text {
+    color: #302f2ffa;
+    font-family: "Dancing Script";
+    font-size: 3rem;
+  }
+
+  &-right-established-year {
+    color: var(--color-primary);
+    font-weight: 300;
+    font-size: 3.5rem;
+  }
+}
+
+.testimonial {
+  &-text-content {
+    &-text {
+      display: block;
+      margin-bottom: 2rem;
+    }
+  }
+}
