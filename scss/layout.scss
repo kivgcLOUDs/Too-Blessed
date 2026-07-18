@@ -34,9 +34,12 @@
   &-left {
     flex: 0 0 40%;
   }
+  position: relative;
+  z-index: 1;
 
   &-right {
     position: relative;
+    z-index: 1;
     // width: 80%;
     // flex: 30%;
     height: 500px;

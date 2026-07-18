@@ -183,20 +183,30 @@
 
   &-card-text {
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    // font-size: 1.4rem;
     letter-spacing: 1px;
-    font-family: var(--font-heading);
+    font-weight: 200;
+    // font-family: var(--font-heading);
   }
 }
 
 .contact-text {
   &-primary {
-    font-family: var(--font-heading);
+    // font-family: var(--font-heading);
+    color: #fff;
     // text-transform: capitalize;
-    font-size: 3.7rem;
-    font-weight: 300;
+    font-size: 4.5rem;
+    // font-weight: 300;
     & span {
       color: var(--color-primary);
     }
+  }
+
+  &-secondary {
+    font-size: 1.7rem;
+    letter-spacing: 0.7px;
+    line-height: 2rem;
+    color: #d1cecec4;
+    margin-bottom: 3.4rem;
   }
 }
