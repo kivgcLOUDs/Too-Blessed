@@ -59,3 +59,55 @@
 .dot--active {
   background-color: var(--color-primary-dark);
 }
+
+.icon {
+  height: 12rem;
+  width: 12rem;
+  // color: var(--color-primary);
+
+  color: #975942;
+  position: absolute;
+}
+/////////////////
+/// POSITIONING ICONS
+.lucide-cooking-pot {
+  top: -10%;
+  left: 20%;
+  transform: rotate(45deg);
+}
+
+.lucide-cherry {
+  top: 70%;
+  left: 7%;
+  transform: rotate(-45deg);
+  width: 17rem;
+  height: 17rem;
+}
+
+.lucide-utensils-crossed {
+  top: 7%;
+  right: 7%;
+  transform: rotate(15deg);
+}
+
+.lucide-line-squiggle {
+  top: 80%;
+  left: 55%;
+  width: 17rem;
+  height: 17rem;
+  transform: rotate(-80deg);
+}
+
+.lucide-star {
+  top: 110%;
+  left: 30%;
+  width: 12rem;
+  height: 12rem;
+  transform: rotate(-30deg);
+}
+
+.lucide-gallery-vertical {
+  height: 4.2rem;
+  width: 4.2rem;
+  transform: translateY(3px);
+}
