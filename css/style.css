@@ -66,8 +66,6 @@ body {
 }
 .main-left {
   flex: 0 0 40%;
-}
-.main {
   position: relative;
   z-index: 1;
 }
