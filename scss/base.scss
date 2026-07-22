@@ -12,9 +12,15 @@
 
   --color-border: #a4a9aa;
 
-  --font-heading: "Cormorant Garamond", serif;
-  --font-body: "Poppins", sans-serif;
+  // --font-heading: "Cormorant Garamond", serif;
+  // --font-body: "Poppins", sans-serif;
+
+  //NEW FONTINGS
+  --font-heading: "LXGW WenKai TC", sans-serif;
+  --font-body: "Sora", sans-serif;
 }
+
+$font-average: 857px; // font-size: 40%
 
 * {
   padding: 0;
@@ -29,10 +35,13 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 63.4%;
 }
 
 body {
+  // font-family: var(--font-body);
   font-family: var(--font-body);
+  background: #f9fafb;
   font-size: 1.6rem;
+  color: var(--color-text);
 }

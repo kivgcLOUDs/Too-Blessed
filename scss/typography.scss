@@ -1,212 +1,27 @@
 .hero {
   &-nav {
-    &-text {
-      font-family: var(--font-heading);
-      color: var(--color-primary);
-      font-size: 3.5rem;
-      font-weight: 590;
-    }
-  }
-}
-
-.main-left {
-  color: var(--color-bg);
-
-  &-heading {
-    &--secondary {
-      font-family: var(--font-heading);
-      font-size: 8rem;
-      font-weight: 400;
-      margin-bottom: 4rem;
+    &-logo {
+      // font-family: var(--color-heading);
+      // font-family: "LXGW WenKai TC", sans-serif;
+      font-family: "Dancing Script", sans-serif;
+      font-size: 4.5rem;
+      font-weight: 600;
 
       & span {
         color: var(--color-primary);
       }
     }
-
-    &--tertiary {
-      color: var(--color-bg);
-      font-family: var(--font-heading);
-      font-size: 2.5rem;
-      letter-spacing: 2.5px;
-      line-height: 3rem;
-      font-weight: 300;
-
-      margin-bottom: 2rem;
-    }
   }
-}
 
-.about-left-header {
-  &--main {
-    text-transform: uppercase;
+  &-list-link {
+    font-weight: 500;
+    color: var(--color-text);
     font-size: 2rem;
-    font-family: var(--font-heading);
-    color: var(--color-primary);
-  }
 
-  &--sub {
-    font-family: "Dancing Script";
-    font-size: 3.5rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-  }
-
-  &--primary {
-    text-transform: capitalize;
-    font-family: var(--font-heading);
-    font-weight: 400;
-    color: #f3e521;
-    font-size: 2.8rem;
-  }
-
-  &--secondary {
-    text-transform: capitalize;
-    font-family: var(--font-heading);
-    color: #fff;
-    letter-spacing: 2px;
-    font-size: 5rem;
-  }
-}
-
-.about-right {
-  &-heading {
-    text-transform: capitalize;
-    font-family: var(--font-heading);
-    font-size: 4rem;
-    padding-bottom: 2rem;
-    & span {
+    &--active {
       color: var(--color-primary);
+      border-bottom: 2px solid var(--color-primary);
+      font-weight: 700;
     }
-  }
-
-  &-text {
-    font-size: 2rem;
-    padding-bottom: 2rem;
-    color: #252424;
-    font-family: var(--font-heading);
-    font-size: 2.2rem;
-  }
-}
-
-.special-menu {
-  &-heading {
-    font-family: var(--font-heading);
-    color: var(--color-primary);
-    text-transform: uppercase;
-    font-size: 5rem;
-    padding-bottom: 1rem;
-  }
-
-  &-primary {
-    text-transform: uppercase;
-    color: var(--color-accent);
-    font-family: var(--font-heading);
-    margin-bottom: 1rem;
-  }
-
-  &-text {
-    color: var(--color-text-light);
-    font-size: 2rem;
-    // font-family: var(--font-heading);
-    // color: var(--color-border);
-  }
-}
-
-.event {
-  &-heading {
-    display: inline-block;
-    text-transform: uppercase;
-    border-bottom: 3px solid var(--color-primary);
-    font-family: "Dancing Script";
-    color: var(--color-primary);
-    font-size: 5rem;
-    letter-spacing: 2px;
-    margin-bottom: 2rem;
-    padding: 2rem;
-  }
-}
-
-.why {
-  &-typo {
-    flex-direction: column;
-    display: flex;
-  }
-
-  font-family: var(--font-heading);
-  text-transform: capitalize;
-  &-text {
-    color: var(--color-primary);
-    font-size: 2rem;
-    display: inline-block;
-    flex: 0 0 80%;
-
-    &::after {
-      content: "?";
-    }
-  }
-
-  &-heading {
-    color: #000;
-    font-size: 6rem;
-    font-weight: 300;
-    display: inline-block;
-    margin-bottom: 2rem;
-  }
-
-  &-card-info {
-    font-size: 3rem;
-    color: #302f2fe0;
-  }
-
-  &-right-established-text {
-    color: #302f2ffa;
-    font-family: "Dancing Script";
-    font-size: 3rem;
-  }
-
-  &-right-established-year {
-    color: var(--color-primary);
-    font-weight: 300;
-    font-size: 3.5rem;
-  }
-}
-
-.testimonial {
-  color: #fff;
-  &-text-content {
-    &-text {
-      display: block;
-      margin-bottom: 2rem;
-    }
-  }
-
-  &-card-text {
-    margin-bottom: 3rem;
-    // font-size: 1.4rem;
-    letter-spacing: 1px;
-    font-weight: 200;
-    // font-family: var(--font-heading);
-  }
-}
-
-.contact-text {
-  &-primary {
-    // font-family: var(--font-heading);
-    color: #fff;
-    // text-transform: capitalize;
-    font-size: 4.5rem;
-    // font-weight: 300;
-    & span {
-      color: var(--color-primary);
-    }
-  }
-
-  &-secondary {
-    font-size: 1.7rem;
-    letter-spacing: 0.7px;
-    line-height: 2rem;
-    color: #d1cecec4;
-    margin-bottom: 3.4rem;
   }
 }
