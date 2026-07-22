@@ -6,3 +6,35 @@
     }
   }
 }
+
+.main {
+  &-btn {
+    padding: 1.3rem 2rem;
+    background-color: var(--color-primary-dark);
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.offering {
+  &-card {
+    position: relative;
+    border-radius: 3rem;
+    text-align: start;
+    background-image: linear-gradient(#16161636), url(../img/event-img.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+
+    &-2 {
+      background-image: linear-gradient(#16161636), url(../img/event-img-2.jpg);
+    }
+    &-3 {
+      background-image: linear-gradient(#16161636), url(../img/event-img-3.jpg);
+    }
+  }
+}

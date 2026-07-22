@@ -3,8 +3,8 @@
     &-logo {
       // font-family: var(--color-heading);
       // font-family: "LXGW WenKai TC", sans-serif;
-      font-family: "Dancing Script", sans-serif;
-      font-size: 4.5rem;
+      font-family: var(--font-heading);
+      font-size: 3rem;
       font-weight: 600;
 
       & span {
@@ -22,6 +22,42 @@
       color: var(--color-primary);
       border-bottom: 2px solid var(--color-primary);
       font-weight: 700;
+    }
+  }
+}
+
+.main {
+  // font-family: "Iansui", cursive;
+  &-heading {
+    font-family: "Elms Sans" sans-serif;
+    color: var(--color-primary);
+    font-size: 7rem;
+    font-weight: 600;
+
+    &--dark {
+      color: var(--color-primary-dark);
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-text {
+    font-size: 1.8rem;
+  }
+
+  &-rating-text span {
+    color: var(--color-primary);
+  }
+}
+
+.offering {
+  &-heading {
+    color: var(--color-primary);
+    font-size: 6rem;
+    font-weight: 600;
+
+    & span {
+      color: var(--color-primary-dark);
     }
   }
 }

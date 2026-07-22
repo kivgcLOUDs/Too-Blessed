@@ -1,0 +1,12 @@
+.head {
+  color: var(--color-primary);
+  font-size: 6rem;
+  font-weight: 600;
+  & span {
+    color: var(--color-primary-dark);
+  }
+}
+
+.center {
+  text-align: center;
+}
