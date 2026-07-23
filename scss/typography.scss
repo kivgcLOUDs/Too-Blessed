@@ -61,3 +61,24 @@
     }
   }
 }
+
+.plan {
+  &-text {
+    max-width: 42%;
+    margin: 2rem auto;
+  }
+
+  &-meal-container-img {
+    width: 50rem;
+  }
+
+  &-meal-text {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+  }
+}
+
+.about {
+  &-heading {
+  }
+}

@@ -62,4 +62,11 @@
 
 .plan {
   margin-top: 15rem;
+
+  &-meals {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    margin-bottom: 5rem;
+  }
 }
