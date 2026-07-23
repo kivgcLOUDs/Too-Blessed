@@ -151,12 +151,11 @@ body {
   height: 100vh;
   width: 100%;
   margin-top: 20rem;
-  background-color: #9e4343;
 }
 .gallery-content {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
-  background-color: #25ad6e;
+  background-color: #eee;
 }
 
 .hero-list {
