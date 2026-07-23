@@ -92,4 +92,14 @@
       color: var(--color-primary);
     }
   }
+
+  &-grid-paragraph {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    &:first-child {
+      margin-top: 2rem;
+    }
+  }
 }

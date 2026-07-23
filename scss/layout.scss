@@ -72,7 +72,8 @@
 }
 
 .about {
-  height: 40vh;
+  // height: 40vh;
+  padding: 0 7rem;
   &-intro {
     display: flex;
     gap: 3rem;
@@ -104,7 +105,7 @@
   display: flex;
   justify-content: space-between;
   gap: 5rem;
-  margin: 5rem 8rem;
+  margin: 8rem 8rem;
 
   &-left {
     display: flex;
@@ -126,5 +127,18 @@
 
   &-right {
     text-align: start;
+  }
+}
+
+.gallery {
+  height: 100vh;
+  width: 100%;
+  margin-top: 20rem;
+  background-color: #9e4343;
+
+  &-content {
+    height: 90vh;
+    width: 100%;
+    background-color: #25ad6e;
   }
 }

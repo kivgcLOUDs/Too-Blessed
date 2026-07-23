@@ -100,7 +100,7 @@ body {
 }
 
 .about {
-  height: 40vh;
+  padding: 0 7rem;
 }
 .about-intro {
   display: flex;
@@ -126,7 +126,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 5rem;
-  margin: 5rem 8rem;
+  margin: 8rem 8rem;
 }
 .about-grid-left {
   display: flex;
@@ -145,6 +145,18 @@ body {
 }
 .about-grid-right {
   text-align: start;
+}
+
+.gallery {
+  height: 100vh;
+  width: 100%;
+  margin-top: 20rem;
+  background-color: #9e4343;
+}
+.gallery-content {
+  height: 90vh;
+  width: 100%;
+  background-color: #25ad6e;
 }
 
 .hero-list {
@@ -250,6 +262,14 @@ body {
 }
 .about-head span {
   color: var(--color-primary);
+}
+.about-grid-paragraph {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.about-grid-paragraph:first-child {
+  margin-top: 2rem;
 }
 
 .head {
