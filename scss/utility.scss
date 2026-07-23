@@ -13,4 +13,25 @@
 
 h2 {
   color: var(--color-primary-dark);
+  font-family: var(--font-heading);
+
+  & span {
+    color: var(--color-primary);
+  }
+}
+.paragraphy-text {
+  color: var(--color-primary-dark);
+  font-family: var(--font-heading);
+
+  & span {
+    color: var(--color-primary);
+  }
+}
+
+.lower {
+  transform: translateY(20%);
+  overflow: hidden;
+}
+.higher {
+  overflow: hidden;
 }

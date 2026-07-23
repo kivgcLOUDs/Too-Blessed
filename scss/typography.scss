@@ -79,6 +79,17 @@
 }
 
 .about {
-  &-heading {
+  &-intro-left {
+    text-align: start;
+  }
+  &-text {
+    margin-bottom: 2rem;
+  }
+
+  &-head {
+    margin-bottom: 2rem;
+    & span {
+      color: var(--color-primary);
+    }
   }
 }
