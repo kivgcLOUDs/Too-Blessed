@@ -35,3 +35,48 @@ h2 {
 .higher {
   overflow: hidden;
 }
+
+.svg-camera {
+  font-size: 8rem;
+}
+
+.flexy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background: #000;
+}
+
+.gallery-vid {
+  height: 65rem;
+  width: 60rem;
+
+  &:hover {
+    transform: none;
+    height: 70rem;
+  }
+}
+
+.icon-whatsapp {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--color-primary-dark);
+
+  transform: translateY(25%);
+  margin-right: 0.5rem;
+}
+
+.mar-top {
+  margin-top: 4rem;
+}
+
+.contact-social-icon {
+  fill: var(--color-primary);
+  height: 3rem;
+  width: 3rem;
+  margin-top: 3rem;
+  padding: 0.3rem;
+}

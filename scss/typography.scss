@@ -69,7 +69,7 @@
   }
 
   &-meal-container-img {
-    width: 50rem;
+    width: 40rem;
   }
 
   &-meal-text {
@@ -101,5 +101,34 @@
     &:first-child {
       margin-top: 2rem;
     }
+  }
+}
+
+.gallery-text {
+  color: var(--color-primary);
+}
+.gallery-heading {
+  padding: 8rem 0;
+}
+
+.contact {
+  &-heading {
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+
+  &-text {
+    color: #fff;
+    padding-bottom: 4rem;
+
+    &-sub {
+      color: #fff;
+      display: inline-block;
+    }
+  }
+  &-link {
+    color: var(--color-primary);
+    text-decoration: none;
   }
 }

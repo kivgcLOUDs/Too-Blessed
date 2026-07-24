@@ -38,3 +38,52 @@
     }
   }
 }
+
+.contact {
+  &-container {
+    width: 70%;
+    height: 50rem;
+    // background: #000;
+    margin: 5rem auto;
+    padding: 8rem 0;
+    background-image:
+      linear-gradient(#11111194),
+      url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbiwChzTDy0cfLfsyWddeGlkSj3emVjlF0yl_UBBCAGW0Gq8x80EZdf6o&s=10");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-btn {
+    background-color: var(--color-primary);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #eee;
+
+    // display: flex;
+    // align-items: center;
+  }
+}
+
+//////////////////////////////////////////
+/// FOR DECORATION SECTION ON HERO SECTION
+/// HERO SPICE
+
+.main-spice-palms--left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40rem;
+  width: 40rem;
+
+  transform: rotate(0deg);
+}
+.main-spice-palms--right {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  height: 40rem;
+  width: 40rem;
+
+  transform: rotate(180deg);
+}
