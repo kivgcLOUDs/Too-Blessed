@@ -5,6 +5,11 @@
       text-decoration: none;
     }
   }
+
+  &-icon {
+    height: 9rem;
+    width: 13rem;
+  }
 }
 
 .main {
@@ -30,7 +35,7 @@
     background-size: cover;
     height: 50rem;
 
-    &-2 {
+    &-1 {
       background-image: linear-gradient(#16161636), url(../img/event-img-2.jpg);
     }
     &-3 {
@@ -72,7 +77,7 @@
 .main-spice-palms--left {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -1%;
   height: 40rem;
   width: 40rem;
 
@@ -81,7 +86,7 @@
 .main-spice-palms--right {
   position: absolute;
   top: 8%;
-  right: 0;
+  right: -1%;
   height: 40rem;
   width: 40rem;
 

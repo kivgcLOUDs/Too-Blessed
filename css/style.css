@@ -42,6 +42,7 @@ body {
 .hero {
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
 }
 .hero-nav {
   display: flex;
@@ -193,6 +194,10 @@ body {
 .hero-list-link {
   text-decoration: none;
 }
+.hero-icon {
+  height: 9rem;
+  width: 13rem;
+}
 
 .main-btn {
   padding: 2rem 3.5rem;
@@ -214,7 +219,7 @@ body {
   background-size: cover;
   height: 50rem;
 }
-.offering-card-2 {
+.offering-card-1 {
   background-image: linear-gradient(rgba(22, 22, 22, 0.2117647059)), url(../img/event-img-2.jpg);
 }
 .offering-card-3 {
@@ -241,7 +246,7 @@ body {
 .main-spice-palms--left {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -1%;
   height: 40rem;
   width: 40rem;
   transform: rotate(0deg);
@@ -250,7 +255,7 @@ body {
 .main-spice-palms--right {
   position: absolute;
   top: 8%;
-  right: 0;
+  right: -1%;
   height: 40rem;
   width: 40rem;
   transform: rotate(180deg);
