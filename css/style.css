@@ -151,6 +151,7 @@ body {
   width: 100%;
   margin-top: 20rem;
   overflow: hidden;
+  position: relative;
   background-color: var(--color-primary-dark);
 }
 .gallery-section--active {
@@ -445,6 +446,58 @@ h2 span {
   width: 3rem;
   margin-top: 3rem;
   padding: 0.3rem;
+}
+
+.icon {
+  color: var(--color-primary-dark);
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+}
+
+.lucide-cooking-pot {
+  top: 15%;
+  left: 20%;
+  transform: rotate(-45deg);
+  width: 12rem;
+  height: 12rem;
+}
+
+.lucide-cherry {
+  display: none;
+  top: 70%;
+  left: 7%;
+  transform: rotate(-45deg);
+}
+
+.lucide-utensils-crossed {
+  top: 7%;
+  right: 7%;
+  transform: rotate(15deg);
+  width: 9rem;
+  height: 9rem;
+}
+
+.lucide-line-squiggle {
+  top: 85%;
+  left: 2%;
+  width: 9rem;
+  height: 9rem;
+  transform: rotate(180deg);
+}
+
+.lucide-star {
+  top: 20%;
+  left: 75%;
+  width: 5rem;
+  height: 5rem;
+  transform: rotate(25deg);
+}
+
+.lucide-gallery-vertical {
+  height: 4.2rem;
+  width: 4.2rem;
+  transform: translateY(3px);
 }
 
 /*# sourceMappingURL=style.css.map */
