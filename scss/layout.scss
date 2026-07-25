@@ -172,7 +172,34 @@
 }
 
 .footer {
+  position: relative;
   height: 60vh;
   width: 100%;
-  background-color: #000000ef;
+  background-color: #818181ef;
+  padding: 20rem 3rem;
+  z-index: 1;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-info {
+    text-align: center;
+  }
+
+  &-company {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+.copy-right {
+  // color: #4b4a4aef;
+  color: #000;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }

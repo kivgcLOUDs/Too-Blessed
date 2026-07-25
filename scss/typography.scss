@@ -141,3 +141,21 @@
     text-decoration: none;
   }
 }
+
+.footer {
+  color: #000000;
+
+  &-text {
+    color: #0b0909;
+  }
+
+  &-links-link {
+    list-style: none;
+    text-decoration: none;
+    color: #0b0909;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}

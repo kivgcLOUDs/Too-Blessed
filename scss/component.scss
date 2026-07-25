@@ -47,6 +47,8 @@
 }
 
 .contact {
+  position: relative;
+  z-index: 500;
   &-container {
     width: 70%;
     height: 50rem;
@@ -110,6 +112,19 @@
       position: absolute;
       bottom: 20%;
       right: 15%;
+    }
+  }
+}
+
+.footer {
+  &-icon {
+    transform: translateY(2px);
+
+    &--social {
+      width: 20rem;
+      height: 20rem;
+      // transform: scale(1.4);
+      fill: var(--color-primary-dark);
     }
   }
 }

@@ -56,8 +56,19 @@ h2 {
   align-items: center;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+////////////////////
+/// FLEX GAPS
 .gap--1 {
   gap: 1rem;
+}
+
+.gap--3 {
+  gap: 3rem;
 }
 
 .active {
@@ -87,6 +98,10 @@ h2 {
   margin-top: 4rem;
 }
 
+.mar-btm {
+  margin-bottom: 2rem;
+}
+
 .contact-social-icon {
   fill: var(--color-primary);
   height: 3rem;
@@ -95,6 +110,13 @@ h2 {
   padding: 0.3rem;
 }
 
+.footer-icon--social {
+  fill: var(--color-primary-dark);
+  height: 4rem;
+  width: 4rem;
+  margin-top: 3rem;
+  padding: 0.3rem;
+}
 .icon {
   // color: #551802;
   color: var(--color-primary-dark);
@@ -174,9 +196,4 @@ h2 {
   z-index: 1000;
   backdrop-filter: blur(20px);
   background-color: #42130183;
-}
-
-.icon-link {
-  height: 8rem;
-  width: 8rem;
 }
