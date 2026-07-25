@@ -28,6 +28,16 @@ h2 {
   }
 }
 
+.about-grid-right-leaf {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+
+  top: -40%;
+  left: 0;
+  transform: rotateY(200deg);
+}
+
 .lower {
   transform: translateY(20%);
   overflow: hidden;
@@ -44,6 +54,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gap--1 {
+  gap: 1rem;
 }
 
 .active {
@@ -134,4 +148,35 @@ h2 {
   height: 4.2rem;
   width: 4.2rem;
   transform: translateY(3px);
+}
+
+///////
+/// ICON ACTIVE
+.icon--active {
+  opacity: 1;
+}
+
+.extra-size {
+  width: 30rem;
+  // height: 35rem;
+}
+.size--mid {
+  width: 35rem;
+}
+
+////////////////////////////
+/// FOR NAVBAR TO BE VISIBLE WHEN SCROLLING UP
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+  background-color: #42130183;
+}
+
+.icon-link {
+  height: 8rem;
+  width: 8rem;
 }

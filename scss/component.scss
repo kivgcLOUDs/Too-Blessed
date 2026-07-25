@@ -15,13 +15,15 @@
 .main {
   &-btn {
     padding: 2rem 3.5rem;
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary);
+    text-decoration: none;
     color: #fff;
     border: none;
     border-radius: 1rem;
-    margin-top: 2rem;
+    margin-top: 10rem;
     font-size: 1.6rem;
     letter-spacing: 0.2rem;
+    cursor: pointer;
   }
 }
 
@@ -74,21 +76,40 @@
 /// FOR DECORATION SECTION ON HERO SECTION
 /// HERO SPICE
 
-.main-spice-palms--left {
-  position: absolute;
-  bottom: 0;
-  left: -1%;
-  height: 40rem;
-  width: 40rem;
+.main-spice {
+  &-palms--left {
+    position: absolute;
+    bottom: 0;
+    left: -1%;
+    height: 40rem;
+    width: 40rem;
 
-  transform: rotate(0deg);
-}
-.main-spice-palms--right {
-  position: absolute;
-  top: 8%;
-  right: -1%;
-  height: 40rem;
-  width: 40rem;
+    transform: rotate(0deg);
+  }
+  &-palms--right {
+    position: absolute;
+    top: 8%;
+    right: -1%;
+    height: 40rem;
+    width: 40rem;
 
-  transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  &-veg {
+    height: 10rem;
+    width: 10rem;
+
+    &--tomatoes {
+      position: absolute;
+      top: 20%;
+      left: 15%;
+    }
+
+    &--pear {
+      position: absolute;
+      bottom: 20%;
+      right: 15%;
+    }
+  }
 }

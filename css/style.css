@@ -6,7 +6,7 @@
   --color-bg: #f5f5f3;
   --color-primary: #ff6b35;
   --color-primary-dark: #421301;
-  --color-primary-hover: #d99764;
+  --color-primary-hover: #ce3d3d10;
   --color-text: #0b0909;
   --color-text-light: #63615f;
   --color-accent: #a05529;
@@ -30,11 +30,12 @@
 html {
   box-sizing: border-box;
   font-size: 63.4%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-body);
-  background: #eee;
+  background: #fff;
   font-size: 1.8rem;
   color: var(--color-text);
 }
@@ -47,8 +48,10 @@ body {
 .hero-nav {
   display: flex;
   align-items: center;
-  padding: 2rem 6rem;
-  margin-bottom: 10rem;
+  background: var(--color-primary-hover);
+  padding: 0 6rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 .hero-lists {
   display: flex;
@@ -59,6 +62,7 @@ body {
 
 .main {
   text-align: center;
+  margin-top: 20rem;
 }
 .main-rating {
   display: flex;
@@ -108,13 +112,14 @@ body {
   margin: 3rem 8rem;
 }
 .about-intro-left {
-  flex: 0 1 40%;
+  flex: 0 1 60%;
   padding-top: 4rem;
 }
 .about-intro-right {
   flex: 1;
   border-radius: 2rem;
   overflow: hidden;
+  position: relative;
 }
 .about-intro-right-img {
   height: 100%;
@@ -154,15 +159,14 @@ body {
   position: relative;
   background-color: var(--color-primary-dark);
 }
-.gallery-section--active {
-  background-color: var(--color-primary-dark);
-}
 
 .gallery {
   display: flex;
   align-items: center;
   height: 70vh;
   gap: 2rem;
+  position: relative;
+  z-index: 3;
 }
 .gallery-img {
   width: 50rem;
@@ -202,13 +206,15 @@ body {
 
 .main-btn {
   padding: 2rem 3.5rem;
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary);
+  text-decoration: none;
   color: #fff;
   border: none;
   border-radius: 1rem;
-  margin-top: 2rem;
+  margin-top: 10rem;
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
+  cursor: pointer;
 }
 
 .offering-card {
@@ -252,7 +258,6 @@ body {
   width: 40rem;
   transform: rotate(0deg);
 }
-
 .main-spice-palms--right {
   position: absolute;
   top: 8%;
@@ -260,6 +265,20 @@ body {
   height: 40rem;
   width: 40rem;
   transform: rotate(180deg);
+}
+.main-spice-veg {
+  height: 10rem;
+  width: 10rem;
+}
+.main-spice-veg--tomatoes {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+.main-spice-veg--pear {
+  position: absolute;
+  bottom: 20%;
+  right: 15%;
 }
 
 .hero-nav-logo {
@@ -295,6 +314,9 @@ body {
 .main-text {
   font-size: 1.8rem;
 }
+.main-text--sub {
+  margin-bottom: 3rem;
+}
 .main-rating-text span {
   color: var(--color-primary);
 }
@@ -314,6 +336,10 @@ body {
 }
 .plan-meal-container-img {
   width: 40rem;
+  transition: all 0.2s;
+}
+.plan-meal-container-img:hover {
+  transform: translateY(-2px);
 }
 .plan-meal-text {
   font-family: var(--font-heading);
@@ -396,6 +422,15 @@ h2 span {
   color: var(--color-primary);
 }
 
+.about-grid-right-leaf {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  top: -40%;
+  left: 0;
+  transform: rotateY(200deg);
+}
+
 .lower {
   transform: translateY(20%);
   overflow: hidden;
@@ -413,6 +448,10 @@ h2 span {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gap--1 {
+  gap: 1rem;
 }
 
 .active {
@@ -498,6 +537,33 @@ h2 span {
   height: 4.2rem;
   width: 4.2rem;
   transform: translateY(3px);
+}
+
+.icon--active {
+  opacity: 1;
+}
+
+.extra-size {
+  width: 30rem;
+}
+
+.size--mid {
+  width: 35rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+  background-color: rgba(66, 19, 1, 0.5137254902);
+}
+
+.icon-link {
+  height: 8rem;
+  width: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

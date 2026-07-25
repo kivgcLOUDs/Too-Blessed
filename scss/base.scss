@@ -11,7 +11,15 @@
   --color-primary: #ff6b35;
   --color-primary-dark: #421301;
 
-  --color-primary-hover: #d99764;
+  /////////////////////////
+  /// RED
+  // --color-primary: #ff3535;
+  // --color-primary: #ff3535;
+
+  // --color-primary: #e20f15;
+  // --color-primary-dark: #01140d;
+
+  --color-primary-hover: #ce3d3d10;
 
   --color-text: #0b0909;
   --color-text-light: #63615f;
@@ -45,13 +53,14 @@ $font-average: 857px; // font-size: 40%
 html {
   box-sizing: border-box;
   font-size: 63.4%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-body);
   // font-family: var(--font-heading);
   // background: #f9fafb;
-  background: #eee;
+  background: #fff;
   font-size: 1.8rem;
   color: var(--color-text);
 }
