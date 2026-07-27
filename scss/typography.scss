@@ -4,7 +4,7 @@
       // font-family: var(--color-heading);
       // font-family: "LXGW WenKai TC", sans-serif;
       font-family: var(--font-heading);
-      font-size: 3rem;
+      // font-size: 3rem;
       font-weight: 600;
 
       & span {
@@ -31,7 +31,7 @@
   &-heading {
     font-family: "Elms Sans" sans-serif;
     color: var(--color-primary);
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 600;
 
     &--dark {
@@ -42,7 +42,13 @@
   }
 
   &-text {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+
+    /////////////////////////#
+    /// SUB TEXT FOR HERO SECTION
+    @media (max-width: $mobile-lg) {
+      font-size: 2.3rem;
+    }
 
     &--sub {
       margin-bottom: 3rem;
@@ -67,13 +73,18 @@
 }
 
 .plan {
+  &-heading {
+    margin-top: 6rem;
+  }
+
   &-text {
-    max-width: 42%;
+    min-width: 42%;
+    max-width: 70%;
     margin: 2rem auto;
   }
 
   &-meal-container-img {
-    width: 40rem;
+    // width: 30rem;
     transition: all 0.2s;
 
     &:hover {
@@ -105,10 +116,14 @@
   &-grid-paragraph {
     display: flex;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.6rem;
 
     &:first-child {
       margin-top: 2rem;
+    }
+
+    @media (max-screen: $mobile-mmd) {
+      margin-bottom: 1rem;
     }
   }
 }
@@ -144,6 +159,10 @@
 
 .footer {
   color: #000000;
+
+  &-heading {
+    font-size: 3rem;
+  }
 
   &-text {
     color: #0b0909;

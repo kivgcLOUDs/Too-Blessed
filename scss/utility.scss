@@ -1,10 +1,20 @@
+.section {
+  margin-top: 10rem;
+}
+
 .head {
   color: var(--color-primary);
   font-size: 6rem;
   font-weight: 600;
+  // margin-top: 8rem;
   & span {
     color: var(--color-primary-dark);
   }
+}
+
+.extra-margin {
+  // margin-top: 54.3906px;
+  margin-top: 60.3906px;
 }
 
 .center {
@@ -39,7 +49,7 @@ h2 {
 }
 
 .lower {
-  transform: translateY(20%);
+  // transform: translateY(20%);
   overflow: hidden;
 }
 .higher {
@@ -59,6 +69,12 @@ h2 {
 .flex {
   display: flex;
   justify-content: center;
+}
+
+.flexy-gap--3 {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
 }
 
 ////////////////////
@@ -116,6 +132,10 @@ h2 {
   width: 4rem;
   margin-top: 3rem;
   padding: 0.3rem;
+
+  &-link {
+    text-decoration: none;
+  }
 }
 .icon {
   // color: #551802;
@@ -178,12 +198,9 @@ h2 {
   opacity: 1;
 }
 
-.extra-size {
-  width: 30rem;
+.start {
+  text-align: start;
   // height: 35rem;
-}
-.size--mid {
-  width: 35rem;
 }
 
 ////////////////////////////
@@ -196,4 +213,74 @@ h2 {
   z-index: 1000;
   backdrop-filter: blur(20px);
   background-color: #42130183;
+}
+
+//////////////////////
+/// OFFERING OVERLAY CARDS FEATURE
+.overlay-card {
+  width: 100%;
+  height: 100%;
+  background: #00000081;
+  border-radius: 3rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // color: var(--color-primary);
+  color: #eee;
+  text-transform: capitalize;
+  line-height: 4rem;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+
+  opacity: 0;
+  transition: all 0.4s;
+
+  &:hover {
+    opacity: 1;
+  }
+  &-text {
+    list-style: none;
+
+    &-li:hover {
+      text-decoration: underline;
+      cursor: default;
+    }
+  }
+
+  &::after {
+    content: "→ ";
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #eee;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-10%);
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.5s;
+    transition-delay: 0.3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover::after {
+    transform: translateX(-60%);
+  }
+}
+
+.footer-icons {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.footer-section {
+  margin-top: 3rem;
 }

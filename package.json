@@ -5,11 +5,11 @@
   "license": "ISC",
   "author": "Ekanem Daniel",
   "type": "commonjs",
-  "main": "index.js",
   "scripts": {
     "compiled:scss": "sass scss/main.scss css/style.css -w",
     "deobserver": "live-server",
-    "dev": "npm-run-all -p deobserver compiled:scss"
+    "dev": "npm-run-all -p deobserver compiled:scss",
+    "start": "parcel index.html"
   },
   "dependencies": {
     "gsap": "^3.15.0",
